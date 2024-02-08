@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENT FORM</h1>
+    <table border="3">
+        <tr>
+            <td><label>NAME:</label></td>
+            <td><input id="ins"></td>
+        </tr>
+        <tr>
+            <td><label>AGE:</label></td>
+            <td><input id="ins1"></td>
+        </tr>
+        <tr>
+            <td><label>GENDER:</label></td>
+            <td><input id="ins2"></td>
+        </tr>
+        <tr>
+            <td><label>COURSE:</label></td>
+            <td><input id="ins3"></td>
+        </tr>
+        <tr>
+            <td><button onclick="save()">SAVE</button</td>
+            
+        </tr>
+    
+    </table>
+    <br>
+    <br>
+    <table  id="task" border="3">
+        <tr>
+            <td>
+                NAME
+            </td>
+            <td>
+                AGE
+            </td>
+            <td>
+                COURSE
+            </td>
+            <td>
+                GENDER
+            </td>
+            <td>
+                ACTION
+            </td>
+        </tr>
+        
+    </table>
+    
+
+
+
+    
+    
+    <script>
+        var a=document.getElementById("ins")
+        var b=document.getElementById("ins1")
+        var c=document.getElementById("ins2")
+        var d=document.getElementById("ins3")
+        function save(){
+            var task1=document.getElementById("task")
+            var create=document.createElement("td")
+            create.innerHTML=ins.value
+            task1.append(create)
+
+            var create1=document.createElement("td")
+            create1.innerHTML=ins1.value
+            task1.append(create1)
+
+            var create2=document.createElement("td")
+            create2.innerHTML=ins2.value
+            task1.append(create2)
+
+            var create3=document.createElement("td")
+            create3.innerHTML=ins3.value
+            task1.append(create3)
+
+
+
+
+        }
+
+    </script>
+
+</body>
+</html>
